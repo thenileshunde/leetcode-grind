@@ -1,6 +1,6 @@
 class Solution {
     public int convertTime(String current, String correct) {
-        // ************ approach 1 *************************
+        // ****************** approach 1 Optimal **********************
         // String[] initTime = current.split(":");
         // String[] newTime = correct.split(":");
         // int currMins = Integer.parseInt(initTime[0]) * 60 + Integer.parseInt(initTime[1]);
@@ -35,7 +35,7 @@ class Solution {
         // }
         // return steps;
 
-        // ************ approach 2 *************************
+        // ****************** approach 2 Optimal **********************
         int[] ops = {60,15,5,1};
         int diffMins = getMinutes(correct) - getMinutes(current);
         int steps = 0;
