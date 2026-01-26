@@ -40,6 +40,8 @@ public class Solution {
         {
             slow = slow.next;
             fast = fast.next.next;
+            // we compare after moving - because at the start, both slow & fast pointers are same 
+            // & pointing to the head.
             if(slow == fast) return true;
         }
         return false;
